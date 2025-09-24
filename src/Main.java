@@ -29,6 +29,19 @@ public class Main {
         System.out.println("Total score: " + score);
     }
 
+    static void question_test(){
+        String[] options = {"A| Paris", "B| London", "C| Berlin", "D| Rome"};
+        Question question_1 = new Question("Capital Of Paris","a)Paris","a" );
+        Question question_2 = new Question("Capital Of London",options,"c" );
+        Question question_3 = new Question("Capital Of Berlin",options,"d" );
+        System.out.println(question_1.question);
+        for (String option : options) {
+            System.out.println(option);
+        }
+        System.out.println(question_1.correctAnswer);
+
+    }
+
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         while (true) {
@@ -41,7 +54,7 @@ public class Main {
 
             if (choice == 1) {
                 System.out.println("Game is starting...");
-                questions(input);
+                question_test();
             } else if (choice == 2) {
                 System.out.println("Goodbye!");
                 break;
