@@ -30,16 +30,11 @@ public class Main {
     }
 
     static void question_test(){
-        String[] options = {"A| Paris", "B| London", "C| Berlin", "D| Rome"};
-        Question question_1 = new Question("Capital Of Paris","a)Paris","a" );
-        Question question_2 = new Question("Capital Of London",options,"c" );
-        Question question_3 = new Question("Capital Of Berlin",options,"d" );
-        System.out.println(question_1.question);
-        for (String option : options) {
-            System.out.println(option);
-        }
-        System.out.println(question_1.correctAnswer);
+        Question question_1 = new Question("Capital Of France","","A) Paris","B) London","C) Berlin","D) Rome" );
+        Question question_2 = new Question("Capital Of Spain","","A) Paris","B) Dubai","C) Madrid","D) Belfast");
+        Question question_3 = new Question("Capital Of Germany","","A) Paris","B) Berlin","C) London","D) Rome");
 
+        System.out.println(question_1.question,question_1.options,question_1.correctAnswer);
     }
 
     public static void main(String[] args) {
